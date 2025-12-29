@@ -20,6 +20,7 @@ npm install -g @zrald/serpfire
 You need API keys from:
 - [Serper.dev](https://serper.dev) - Google Search API
 - [Firecrawl.dev](https://firecrawl.dev) - Web Scraping API
+- [Context7](https://context7.com) - Documentation Search API (Optional, for context7 tools)
 
 ## Configuration
 
@@ -35,7 +36,8 @@ Add to your MCP settings file (e.g., `mcp.json`):
       "args": ["-y", "@zrald/serpfire"],
       "env": {
         "SERPER_API_KEY": "your_serper_api_key_here",
-        "FIRECRAWL_API_KEY": "your_firecrawl_api_key_here"
+        "FIRECRAWL_API_KEY": "your_firecrawl_api_key_here",
+        "CONTEXT7_API_KEY": "your_context7_api_key_here"
       }
     }
   }
@@ -74,7 +76,22 @@ Crawl an entire website.
 - `url` (string, required): Base URL to crawl
 - `limit` (number, optional): Max pages to crawl
 
-### 4. `research_topic` ⭐ (Recommended)
+### 4. `context7_search`
+Search for up-to-date documentation and code libraries using Context7.
+
+**Arguments:**
+- `query` (string, required): Search query (e.g. 'next.js', 'redis')
+
+### 5. `super_search` 🚀 (New)
+Comprehensive deep research tool that combines:
+1. **Context7 Search**: Finds authoritative libraries and fetches documentation.
+2. **Google Search (Serper)**: Finds broader web results.
+3. **Firecrawl Scraping**: Scrapes relevant web pages.
+
+**Arguments:**
+- `topic` (string, required): Topic to research
+
+### 6. `research_topic`
 Automatically search a topic and scrape top results.
 
 **Arguments:**
