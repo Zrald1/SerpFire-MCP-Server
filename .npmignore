@@ -1,0 +1,32 @@
+# Exclude sensitive files
+.env
+.env.*
+
+# Exclude source files (we'll publish compiled dist/)
+src/
+tsconfig.json
+
+# Exclude test files
+test_client.mjs
+research_ai.mjs
+
+# Exclude config files
+mcp_config_updated.json
+
+# Node modules
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build artifacts (keep dist/)
+# dist/  <- We want to INCLUDE dist/
