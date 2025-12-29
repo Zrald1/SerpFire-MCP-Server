@@ -6,9 +6,8 @@
 src/
 tsconfig.json
 
-# Exclude test files
-test_client.mjs
-research_ai.mjs
+# Exclude examples
+examples/
 
 # Exclude config files
 mcp_config_updated.json

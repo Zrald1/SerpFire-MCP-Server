@@ -12,7 +12,7 @@ A powerful Model Context Protocol (MCP) server that combines **Serper.dev** (Goo
 ## Installation
 
 ```bash
-npm install -g serpfire
+npm install -g @zrald/serpfire
 ```
 
 ## Prerequisites
@@ -32,7 +32,7 @@ Add to your MCP settings file (e.g., `mcp.json`):
   "mcpServers": {
     "serpfire": {
       "command": "npx",
-      "args": ["-y", "serpfire"],
+      "args": ["-y", "@zrald/serpfire"],
       "env": {
         "SERPER_API_KEY": "your_serper_api_key_here",
         "FIRECRAWL_API_KEY": "your_firecrawl_api_key_here"
