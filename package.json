@@ -1,6 +1,6 @@
 {
   "name": "@zrald/serpfire",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server combining Serper.dev (Google Search) and Firecrawl (Web Scraping) for AI research capabilities",
   "main": "dist/index.js",
   "bin": {
@@ -39,7 +39,7 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.25.1",
     "axios": "^1.13.2",
-    "dotenv": "^17.2.3",
+    "dotenv": "^16.4.7",
     "zod": "^4.2.1"
   },
   "devDependencies": {
